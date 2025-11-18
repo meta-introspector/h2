@@ -19,8 +19,8 @@ futures = { version = "0.3", default-features = false, features = ["std"] }
 http = "1"
 
 # Prevent this from interfering with workspaces
-[workspace]
-members = ["."]
+#[workspace]
+#members = ["."]
 
 [[bin]]
 name = "fuzz_client"

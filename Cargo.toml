@@ -15,9 +15,9 @@ repository = "https://github.com/hyperium/h2"
 readme = "README.md"
 keywords = ["http", "async", "non-blocking"]
 categories = ["asynchronous", "web-programming", "network-programming"]
-exclude = ["fixtures/**", "ci/**"]
+#exclude = ["fixtures/**", "ci/**"]
 edition = "2021"
-rust-version = "1.63"
+# rust-version = "1.63"
 
 [features]
 # Enables `futures::Stream` implementations for various types.
@@ -29,14 +29,14 @@ stream = []
 # depends on this feature.
 unstable = []
 
-[workspace]
-members = [
-    "tests/h2-fuzz",
-    "tests/h2-tests",
-    "tests/h2-support",
-    "util/genfixture",
-    "util/genhuff",
-]
+#[workspace]
+# members = [
+#     "tests/h2-fuzz",
+#     "tests/h2-tests",
+#     "tests/h2-support",
+#     "util/genfixture",
+#     "util/genhuff",
+# ]
 
 [dependencies]
 atomic-waker = "1.0.0"
